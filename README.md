@@ -39,10 +39,24 @@ Built using **React.js**, **Node.js**, **Express.js**, and **MySQL**.
 - Each user can vote only once per poll
 - JWT-based authentication for users
   
-Layer,Technology
-Frontend,"React.js, React Router DOM, Axios, CSS"
-Backend,"Node.js, Express.js, JWT, bcryptjs"
-Database,MySQL
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- React Router DOM
+- Axios
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+- JWT
+- bcryptjs
+
+### Database
+- MySQL
+
+---
 
 ## 📂 Project Structure
 
