@@ -1,128 +1,64 @@
 # 🗳️ Voting Poll App
 
-A full-stack web application where users can create polls, vote instantly, and view live results.
+A lightweight, full-stack application for real-time polling. Users can create custom polls with image support, cast instant votes, and track live analytics through visual charts and progress bars.
 
-Built using **React.js**, **Node.js**, **Express.js**, and **MySQL**.
+**Built with:** React.js, Node.js, Express.js, and MySQL.
 
----
+-----
 
-## 🚀 Features
+## 🚀 Core Features
 
-### 👤 User Features
-- User Registration
-- User Login with JWT Authentication
-- Personal Dashboard
-- Logout Functionality
+### 👤 User Experience
 
-### 📊 Poll Features
-- Create Polls
-- Add Multiple Options
-- Optional Image URL for Poll Choices
-- View All Polls
-- Vote on Polls
-- One Vote Per User
-- Live Vote Count
-- Percentage Progress Bars
-- Better Charts / Visual Results
-- Delete Polls (Creator Only)
+  * **Authentication:** Secure registration and login using JWT.
+  * **Personal Dashboard:** Overview of created polls, voting history, and activity.
+  * **Instant Feedback:** Real-time vote counts and dynamic percentage bars.
+  * **Visual Analytics:** Interactive charts for detailed result breakdowns.
 
-### 📈 Dashboard Features
-- Polls Created
-- Polls Voted
-- Remaining Polls
+### 📊 Poll Management
 
----
+  * **Flexibility:** Create polls with multiple choices and optional image URLs for each option.
+  * **Security:** Enforced one-vote-per-user logic and creator-only deletion rights.
+  * **Discovery:** Browse all active polls from a centralized list.
 
-## 🔒 Security & Control Features
+-----
 
-- Only the poll creator can delete their poll
-- Each user can vote only once per poll
-- JWT-based authentication for users
-  
 ## 🛠️ Tech Stack
 
-### Frontend
-- React.js
-- React Router DOM
-- Axios
-- CSS
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | React.js, React Router DOM, Axios, CSS |
+| **Backend** | Node.js, Express.js, JWT, bcryptjs |
+| **Database** | MySQL |
 
-### Backend
-- Node.js
-- Express.js
-- JWT
-- bcryptjs
-
-### Database
-- MySQL
-
----
+-----
 
 ## 📂 Project Structure
 
-```text id="t6p2cn"
+```text
 Voting-Poll-App/
-│── backend/
+├── backend/            # Express server & DB configuration
 │   ├── server.js
-│   ├── db.js
-│
-│── src/
-│   ├── components/
-│   │   └── PollCard.js
-│   │
-│   ├── pages/
-│   │   ├── CreatePoll.js
-│   │   ├── PollList.js
-│   │   ├── Login.js
-│   │   ├── Register.js
-│   │   └── Dashboard.js
-│   │
-│   ├── App.js
-│   └── App.css
-````
-
----
-
-## ⚙️ Installation
-
-### 1️⃣ Clone Repository
-
-```bash id="g9y4la"
-git clone https://github.com/Abhinaya-Bolishetti/Voting-Poll-App.git
-cd Voting-Poll-App
+│   └── db.js
+├── src/                # Frontend source files
+│   ├── components/     # Reusable UI elements (PollCard, etc.)
+│   ├── pages/          # Application views (Dashboard, Login, List)
+│   ├── App.js          # Routing & Logic
+│   └── App.css         # Custom styling
 ```
 
----
+-----
 
-### 2️⃣ Install Frontend Dependencies
+## ⚙️ Setup & Installation
 
-```bash id="m2a8pd"
-npm install
-```
+### 1\. Database Configuration
 
----
+Create a MySQL database named `pollapp` and run the following schema:
 
-### 3️⃣ Install Backend Dependencies
-
-```bash id="n4s7qy"
-cd backend
-npm install
-```
-
----
-
-## 🗄️ MySQL Setup
-
-Create database:
-
-```sql id="f7r3uw"
+```sql
 CREATE DATABASE pollapp;
 USE pollapp;
-```
 
-Create tables:
-
-```sql id="c1v8ex"
 CREATE TABLE users (
   id INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(100),
@@ -145,63 +81,52 @@ CREATE TABLE poll_options (
 );
 ```
 
----
+### 2\. Backend Setup
 
-## ▶️ Run Project
-
-### Start Backend
-
-```bash id="x7t5ne"
+```bash
 cd backend
+npm install
 node server.js
 ```
 
-### Start Frontend
+### 3\. Frontend Setup
 
-```bash id="h6m1zb"
+```bash
+# In the root directory
+npm install
 npm start
 ```
 
-Open:
+*App will be live at `http://localhost:3000`*
 
-```text id="r4p9ok"
-http://localhost:3000
-```
+-----
 
----
+## 📸 Preview
 
-## 📸 Screenshots
+\<p align="center"\>
+\<b\>Home Page\</b\><br>
+\<img src="[https://github.com/user-attachments/assets/51404f51-c810-4885-8f55-22765ccd198e](https://github.com/user-attachments/assets/51404f51-c810-4885-8f55-22765ccd198e)" width="700"\>
+\</p\>
 
-Add screenshots here after uploading:
+\<p align="center"\>
+\<b\>Create Poll\</b\><br>
+\<img src="[https://github.com/user-attachments/assets/6e17ae94-e8d9-470c-8f77-e02600165644](https://github.com/user-attachments/assets/6e17ae94-e8d9-470c-8f77-e02600165644)" width="700"\>
+\</p\>
 
-* Home Page
-  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/51404f51-c810-4885-8f55-22765ccd198e" />
+\<p align="center"\>
+\<b\>Live Results\</b\><br>
+\<img src="[https://github.com/user-attachments/assets/16811ddf-64c5-4435-8149-9bbb142945d3](https://github.com/user-attachments/assets/16811ddf-64c5-4435-8149-9bbb142945d3)" width="700"\>
+\</p\>
 
-* Create Poll
-  <img width="1133" height="672" alt="image" src="https://github.com/user-attachments/assets/6e17ae94-e8d9-470c-8f77-e02600165644" />
+\<p align="center"\>
+\<b\>Dashboard\</b\><br>
+\<img src="[https://github.com/user-attachments/assets/8ec05c52-6649-4e9b-9f97-e7b57d655fca](https://github.com/user-attachments/assets/8ec05c52-6649-4e9b-9f97-e7b57d655fca)" width="700"\>
+\</p\>
 
-* Poll Results
-  <img width="1034" height="673" alt="image" src="https://github.com/user-attachments/assets/16811ddf-64c5-4435-8149-9bbb142945d3" />
+-----
 
-* Login/Register
-  <img width="922" height="333" alt="image" src="https://github.com/user-attachments/assets/5670088e-3a72-49f0-b711-547b179df163" />
-  
-* Dashboard
-  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/8ec05c52-6649-4e9b-9f97-e7b57d655fca" />
-
-
----
-
-## 💡 Future Improvements
-
-* Poll Expiry Date
-* Search Polls
-* Deploy Online
-
----
-
-## 👨‍💻 Author
+## 👨‍💻 Developer
 
 **Abhinaya Bolishetti**
 
-GitHub: [https://github.com/Abhinaya-Bolishetti](https://github.com/Abhinaya-Bolishetti)
+  * GitHub: [@Abhinaya-Bolishetti](https://github.com/Abhinaya-Bolishetti)
