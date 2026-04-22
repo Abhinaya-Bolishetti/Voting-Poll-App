@@ -1,64 +1,114 @@
 # 🗳️ Voting Poll App
 
-A lightweight, full-stack application for real-time polling. Users can create custom polls with image support, cast instant votes, and track live analytics through visual charts and progress bars.
+A full-stack web application where users can create polls, vote instantly, and view live results.
 
-**Built with:** React.js, Node.js, Express.js, and MySQL.
+Built using **React.js**, **Node.js**, **Express.js**, and **MySQL**.
 
------
+---
 
-## 🚀 Core Features
+## 🚀 Features
 
-### 👤 User Experience
+### 👤 User Features
+- User Registration
+- User Login with JWT Authentication
+- Personal Dashboard
+- Logout Functionality
 
-  * **Authentication:** Secure registration and login using JWT.
-  * **Personal Dashboard:** Overview of created polls, voting history, and activity.
-  * **Instant Feedback:** Real-time vote counts and dynamic percentage bars.
-  * **Visual Analytics:** Interactive charts for detailed result breakdowns.
+### 📊 Poll Features
+- Create Polls
+- Add Multiple Options
+- Optional Image URL for Poll Choices
+- View All Polls
+- Vote on Polls
+- One Vote Per User
+- Live Vote Count
+- Percentage Progress Bars
+- Better Charts / Visual Results
+- Delete Polls (Creator Only)
 
-### 📊 Poll Management
+### 📈 Dashboard Features
+- Polls Created
+- Polls Voted
+- Remaining Polls
 
-  * **Flexibility:** Create polls with multiple choices and optional image URLs for each option.
-  * **Security:** Enforced one-vote-per-user logic and creator-only deletion rights.
-  * **Discovery:** Browse all active polls from a centralized list.
+---
 
------
+## 🔒 Security & Control Features
 
-## 🛠️ Tech Stack
-
-| Layer | Technology |
-| :--- | :--- |
-| **Frontend** | React.js, React Router DOM, Axios, CSS |
-| **Backend** | Node.js, Express.js, JWT, bcryptjs |
-| **Database** | MySQL |
-
------
+- Only the poll creator can delete their poll
+- Each user can vote only once per poll
+- JWT-based authentication for users
+  
+Layer,Technology
+Frontend,"React.js, React Router DOM, Axios, CSS"
+Backend,"Node.js, Express.js, JWT, bcryptjs"
+Database,MySQL
 
 ## 📂 Project Structure
 
-```text
+```text id="t6p2cn"
 Voting-Poll-App/
-├── backend/            # Express server & DB configuration
+│── backend/
 │   ├── server.js
-│   └── db.js
-├── src/                # Frontend source files
-│   ├── components/     # Reusable UI elements (PollCard, etc.)
-│   ├── pages/          # Application views (Dashboard, Login, List)
-│   ├── App.js          # Routing & Logic
-│   └── App.css         # Custom styling
+│   ├── db.js
+│
+│── src/
+│   ├── components/
+│   │   └── PollCard.js
+│   │
+│   ├── pages/
+│   │   ├── CreatePoll.js
+│   │   ├── PollList.js
+│   │   ├── Login.js
+│   │   ├── Register.js
+│   │   └── Dashboard.js
+│   │
+│   ├── App.js
+│   └── App.css
+````
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone Repository
+
+```bash id="g9y4la"
+git clone https://github.com/Abhinaya-Bolishetti/Voting-Poll-App.git
+cd Voting-Poll-App
 ```
 
------
+---
 
-## ⚙️ Setup & Installation
+### 2️⃣ Install Frontend Dependencies
 
-### 1\. Database Configuration
+```bash id="m2a8pd"
+npm install
+```
 
-Create a MySQL database named `pollapp` and run the following schema:
+---
 
-```sql
+### 3️⃣ Install Backend Dependencies
+
+```bash id="n4s7qy"
+cd backend
+npm install
+```
+
+---
+
+## 🗄️ MySQL Setup
+
+Create database:
+
+```sql id="f7r3uw"
 CREATE DATABASE pollapp;
 USE pollapp;
+```
 
+Create tables:
+
+```sql id="c1v8ex"
 CREATE TABLE users (
   id INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(100),
@@ -81,41 +131,63 @@ CREATE TABLE poll_options (
 );
 ```
 
-### 2\. Backend Setup
+---
 
-```bash
+## ▶️ Run Project
+
+### Start Backend
+
+```bash id="x7t5ne"
 cd backend
-npm install
 node server.js
 ```
 
-### 3\. Frontend Setup
+### Start Frontend
 
-```bash
-# In the root directory
-npm install
+```bash id="h6m1zb"
 npm start
 ```
 
-*App will be live at `http://localhost:3000`*
+Open:
 
------
+```text id="r4p9ok"
+http://localhost:3000
+```
 
-📸 Screenshots
-Home Page
-<img src="https://github.com/user-attachments/assets/51404f51-c810-4885-8f55-22765ccd198e" width="800" alt="Home Page">
+---
 
-Create Poll
-<img src="https://github.com/user-attachments/assets/6e17ae94-e8d9-470c-8f77-e02600165644" width="800" alt="Create Poll">
+## 📸 Screenshots
 
-Poll Results & Live Charts
-<img src="https://github.com/user-attachments/assets/16811ddf-64c5-4435-8149-9bbb142945d3" width="800" alt="Poll Results">
+Add screenshots here after uploading:
 
-Dashboard
-<img src="https://github.com/user-attachments/assets/8ec05c52-6649-4e9b-9f97-e7b57d655fca" width="800" alt="Dashboard View">
+* Home Page
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/51404f51-c810-4885-8f55-22765ccd198e" />
 
-## 👨‍💻 Developer
+* Create Poll
+  <img width="1133" height="672" alt="image" src="https://github.com/user-attachments/assets/6e17ae94-e8d9-470c-8f77-e02600165644" />
+
+* Poll Results
+  <img width="1034" height="673" alt="image" src="https://github.com/user-attachments/assets/16811ddf-64c5-4435-8149-9bbb142945d3" />
+
+* Login/Register
+  <img width="922" height="333" alt="image" src="https://github.com/user-attachments/assets/5670088e-3a72-49f0-b711-547b179df163" />
+  
+* Dashboard
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/8ec05c52-6649-4e9b-9f97-e7b57d655fca" />
+
+
+---
+
+## 💡 Future Improvements
+
+* Poll Expiry Date
+* Search Polls
+* Deploy Online
+
+---
+
+## 👨‍💻 Author
 
 **Abhinaya Bolishetti**
 
-  * GitHub: [@Abhinaya-Bolishetti](https://github.com/Abhinaya-Bolishetti)
+GitHub: [https://github.com/Abhinaya-Bolishetti](https://github.com/Abhinaya-Bolishetti)
