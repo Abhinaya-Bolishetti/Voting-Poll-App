@@ -101,29 +101,18 @@ npm start
 
 -----
 
-## 📸 Preview
+📸 Screenshots
+Home Page
+<img src="https://github.com/user-attachments/assets/51404f51-c810-4885-8f55-22765ccd198e" width="800" alt="Home Page">
 
-\<p align="center"\>
-\<b\>Home Page\</b\><br>
-\<img src="[https://github.com/user-attachments/assets/51404f51-c810-4885-8f55-22765ccd198e](https://github.com/user-attachments/assets/51404f51-c810-4885-8f55-22765ccd198e)" width="700"\>
-\</p\>
+Create Poll
+<img src="https://github.com/user-attachments/assets/6e17ae94-e8d9-470c-8f77-e02600165644" width="800" alt="Create Poll">
 
-\<p align="center"\>
-\<b\>Create Poll\</b\><br>
-\<img src="[https://github.com/user-attachments/assets/6e17ae94-e8d9-470c-8f77-e02600165644](https://github.com/user-attachments/assets/6e17ae94-e8d9-470c-8f77-e02600165644)" width="700"\>
-\</p\>
+Poll Results & Live Charts
+<img src="https://github.com/user-attachments/assets/16811ddf-64c5-4435-8149-9bbb142945d3" width="800" alt="Poll Results">
 
-\<p align="center"\>
-\<b\>Live Results\</b\><br>
-\<img src="[https://github.com/user-attachments/assets/16811ddf-64c5-4435-8149-9bbb142945d3](https://github.com/user-attachments/assets/16811ddf-64c5-4435-8149-9bbb142945d3)" width="700"\>
-\</p\>
-
-\<p align="center"\>
-\<b\>Dashboard\</b\><br>
-\<img src="[https://github.com/user-attachments/assets/8ec05c52-6649-4e9b-9f97-e7b57d655fca](https://github.com/user-attachments/assets/8ec05c52-6649-4e9b-9f97-e7b57d655fca)" width="700"\>
-\</p\>
-
------
+Dashboard
+<img src="https://github.com/user-attachments/assets/8ec05c52-6649-4e9b-9f97-e7b57d655fca" width="800" alt="Dashboard View">
 
 ## 👨‍💻 Developer
 
