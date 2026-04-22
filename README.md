@@ -205,10 +205,3 @@ Add screenshots here after uploading:
 **Abhinaya Bolishetti**
 
 GitHub: [https://github.com/Abhinaya-Bolishetti](https://github.com/Abhinaya-Bolishetti)
-
-
-## ⭐ If You Like This Project
-
-Give this repository a star.
-
-```
