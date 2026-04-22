@@ -20,9 +20,11 @@ Built using **React.js**, **Node.js**, **Express.js**, and **MySQL**.
 - Optional Image URL for Poll Choices
 - View All Polls
 - Vote on Polls
+- One Vote Per User
 - Live Vote Count
 - Percentage Progress Bars
-- Delete Polls
+- Better Charts / Visual Results
+- Delete Polls (Creator Only)
 
 ### 📈 Dashboard Features
 - Polls Created
@@ -31,6 +33,12 @@ Built using **React.js**, **Node.js**, **Express.js**, and **MySQL**.
 
 ---
 
+## 🔒 Security & Control Features
+
+- Only the poll creator can delete their poll
+- Each user can vote only once per poll
+- JWT-based authentication for users
+  
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -169,22 +177,25 @@ Add screenshots here after uploading:
 * Home Page
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/51404f51-c810-4885-8f55-22765ccd198e" />
 
-
 * Create Poll
+  <img width="1133" height="672" alt="image" src="https://github.com/user-attachments/assets/6e17ae94-e8d9-470c-8f77-e02600165644" />
+
 * Poll Results
+  <img width="1034" height="673" alt="image" src="https://github.com/user-attachments/assets/16811ddf-64c5-4435-8149-9bbb142945d3" />
+
 * Login/Register
+  <img width="922" height="333" alt="image" src="https://github.com/user-attachments/assets/5670088e-3a72-49f0-b711-547b179df163" />
+  
 * Dashboard
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/8ec05c52-6649-4e9b-9f97-e7b57d655fca" />
+
 
 ---
 
 ## 💡 Future Improvements
 
-* One Vote Per User
-* Creator Only Delete
-* Better Charts
 * Poll Expiry Date
 * Search Polls
-* Dark Mode
 * Deploy Online
 
 ---
